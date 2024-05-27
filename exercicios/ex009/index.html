@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<style>
+    mark{
+        background-color: cyan;
+    }
+</style>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte/ Pré-formatação</h2>
+    <p>O comando <code>document.getElemantById('teste')</code> é escrito em linhagem JavaScript.</p>
+    <p>Exemplo <mark>sem Pré-formatação</mark>.</p>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é IMPAR')
+    </code>
+    <p>Exemplo abaixo <mark> com Pré-Formatação</mark>.</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+        </code>
+    </pre>
+</body>
+</html>
