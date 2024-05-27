@@ -1,49 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pe-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Outras formatações</title>
+    <title>Listas </title>
 </head>
-<style>
-    mark{
-        background-color: cyan;
-    }
-</style>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte/ Pré-formatação</h2>
-    <p>O comando <code>document.getElemantById('teste')</code> é escrito em linhagem JavaScript.</p>
-    <p>Exemplo <mark>sem Pré-formatação</mark>.</p>
-    <code>
-        num = int(input('Digite um número'))
-        if num % 2 == 0:
-            print(f'O número {num} é PAR')
-        else:
-            print(f'O número {num} é IMPAR')
-    </code>
-    <p>Exemplo abaixo <mark> com Pré-Formatação</mark>.</p>
-    <pre>
-        <code>
-    num = int(input('Digite um número'))
-    if num % 2 == 0:
-        print(f'O número {num} é PAR')
-    else:
-        print(f'O número {num} é IMPAR')
-        </code>
-    </pre>
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo:<q> o computador é um burro muito rápido.</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo Diego Eis, e Elcio Ferreira, no seu livro de HTML5 e CSS3(com farinha e pimenta): </p>
-    <blockquote cite="https://www.cin.ufpe.br/~dfop/Arquivos/Pacote%20Web/HTML5%20e%20CSS3%20com%20Farinha%20e%20Pimenta%20Diego%20Eis%20e%20Elcio%20Ferreira.pdf">
-        HTML é uma abreviação de Hypertext Markup Language, que traduzindo
-para o português significa Linguagem de Marcação de Hypertexto.
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title=" Hypertext Markup Language">HTML</abbr> e <abbr title=" Cascading Style Sheet">CSS</abbr>. Estou adorando!</p>
-    <h2>Texto invertido</h2>
-    <p><bdo dir="ltr">Estou aprendenco a criar coisas em HTML.</bdo></p>
-    <p><bdo dir="rtl">Estou aprendenco a criar coisas em HTML.</bdo></p>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol tipe="1"> <!-- 1 A a i I-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ol type="1" start="3">
+            <li>Item 2.1</li>
+            <ol>
+                <li>Item 3.1</li>
+                <li>Item 3.2</li>
+            </ol>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+        </ol>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="circle"> <!--circle/disc/square -->
+       <li>Item 1</li> 
+       <ol>
+        <li>Item 2.1</li>
+        <ul type="square">
+            <li>Item 3.1</li>
+            <li>Item 3.2</li>
+        </ul>
+       </ol>
+       <li>Item 2</li>
+       <ol>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <ul type="square">
+            <li>Item 4.1</li>
+            <li>Item 4.2</li>
+        </ul>
+       </ol>
+       <li>Item 3</li>
+       <li>Item 4</li>
+       <li>Item 5</li>
+    </ul>
+    <h2>Jogos</h2>
+    <ol>
+        <li>NES</li>
+            <ul type="square">
+                <li>Mario Bros</li>
+                <ul type="circle">
+                    <li>Mario Bros 3</li>
+                    <li>Mario: Lost Levels</li>
+                </ul>
+                <li>Ninja Gaiden</li>
+            </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>Playstation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+            
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+    <!--termo--><dt>HTML</dt>
+    <!--Descrição--> <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para criação do design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+    </dl>
 </body>
 </html>
