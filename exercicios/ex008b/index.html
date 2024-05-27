@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<style>
+    mark{
+        background-color: cyan;
+    }
+</style>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte/ Pré-formatação</h2>
+    <p>O comando <code>document.getElemantById('teste')</code> é escrito em linhagem JavaScript.</p>
+    <p>Exemplo <mark>sem Pré-formatação</mark>.</p>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é IMPAR')
+    </code>
+    <p>Exemplo abaixo <mark> com Pré-Formatação</mark>.</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo:<q> o computador é um burro muito rápido.</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Diego Eis, e Elcio Ferreira, no seu livro de HTML5 e CSS3(com farinha e pimenta): </p>
+    <blockquote cite="https://www.cin.ufpe.br/~dfop/Arquivos/Pacote%20Web/HTML5%20e%20CSS3%20com%20Farinha%20e%20Pimenta%20Diego%20Eis%20e%20Elcio%20Ferreira.pdf">
+        HTML é uma abreviação de Hypertext Markup Language, que traduzindo
+para o português significa Linguagem de Marcação de Hypertexto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title=" Hypertext Markup Language">HTML</abbr> e <abbr title=" Cascading Style Sheet">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="ltr">Estou aprendenco a criar coisas em HTML.</bdo></p>
+    <p><bdo dir="rtl">Estou aprendenco a criar coisas em HTML.</bdo></p>
+</body>
+</html>
