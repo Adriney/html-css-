@@ -15,24 +15,44 @@
             font-weight: bold;
         }
         a:visited {
-            color: rgb(160, 4, 4);
+            color: rgb(160, 4, 4);/*depois que visitar o link fica na cor vermelha*/
         }
         
         a:hover {
-            color: rgb(25, 38, 92);
+            color: rgb(25, 38, 92);/*enquanto nao visitar o link fica na cor azul*/
             text-decoration: underline;
 
         }
         a:active {
-            color: yellow;
+            color: yellow;/*quando clicar fica na cor amarela*/
+        }
+
+        .especial::before {
+            content: ' ⇒ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(90, 73, 73);
+        }
+
+        .especial {
+                background-color: darkgrey;
+                color: black;
+            }
+
+        .especial::after {
+            content: ' ⇐ ';/*avisa no final do conteudo que é um link*/  
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(90, 73, 73);
         }
     </style>
 </head>
 <body>
     <h1>Personalizando Links</h1>
     <ul>
+        
         <li><a href="https://github.com"target="_blank" rel="nofollow">Repositório GitHub</a></li>
-        <li><a href="https://www.youtube.com"target="_blank" rel="nofollow">Canal do YouTube</a></li>
+        <li><a href="https://www.youtube.com" class="especial" target="_blank" rel="nofollow">Canal do YouTube</a></li>
         <li><a href="https://www.cursoemvideo.com" target="_blank" rel="nofollow">Site do CursoemVidídeo</a></li>
     </ul>
 </body>
